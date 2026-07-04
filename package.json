@@ -1,5 +1,6 @@
 {
-  "name": "react-example",
+  "homepage": "https://scm310.github.io/WIT",
+  "name": "WIT",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
